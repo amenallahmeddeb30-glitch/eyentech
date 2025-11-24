@@ -10,7 +10,7 @@ $product = mysqli_fetch_assoc($result);
 <h2><?php echo $product['name']; ?></h2>
 <img src="assets/images/<?php echo $product['image']; ?>" width="250">
 <p><?php echo $product['description']; ?></p>
-<h3>$<?php echo $product['price']; ?></h3>
+<h3><?php echo $product['price']; ?>TND</h3>
 
 <a href="cart.php?action=add&id=<?php echo $product['id']; ?>">Add to Cart</a>
 
